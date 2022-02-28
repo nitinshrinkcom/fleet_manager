@@ -1,0 +1,225 @@
+/* .card-like {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 6px;
+	padding: 50px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} */
+.btn-irv {
+  width: 100%;
+  background: #038dab;
+  color: #fff !important;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+.btn-irv:hover {
+  background: #02738d;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.btn-irv-default {
+  font-weight: bold;
+  background: #bbb;
+  color: #fff !important;
+}
+.btn-irv-default:hover {
+  background: #aaa;
+}
+.wizard {
+  overflow: hidden;
+}
+.wizard .wizard-header {
+  margin-bottom: 30px;
+}
+.wizard .wizard-header h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.wizard .wizard-header h1 small {
+  color: #bbb;
+}
+.wizard .wizard-header hr {
+  border-color: #038dab;
+  border-top-width: 2px;
+}
+.wizard .wizard-header .steps {
+  height: 15px;
+}
+
+#steps_line {
+  width: 100%;
+  margin: 2.5rem auto;
+}
+.step_line {
+  width: 40px;
+  height: 40px;
+  background-color: #F3D6C7;
+  display: inline-block;
+  border: 4px solid;
+  border-color: transparent;
+  border-radius: 50%;
+  color: #000;
+  font-weight: 700;
+  font-size:18px;
+  text-align: center;
+  line-height: 34px;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+.step_line.active {
+  background-color: rgb(255 120 48) !important;
+}
+
+.step_line:nth-child(n + 2) {
+  margin: 0 0 0 100px;
+  transform: translate(0, -4px);
+}
+.step_line:nth-child(n + 2):before {
+  width: 100px;
+  height: 3px;
+  display: block;
+  background-color: #F3D6C7;
+  transform: translate(-104px, 16px);
+  content: "";
+}
+.step_line:after {
+    width: 143px;
+    display: block;
+    transform: translate(-55px, 3px);
+    color: #000;
+    line-height: 3.3;
+    content: attr(data-desc);
+    font-weight: 600;
+    font-size: 13px;
+}
+.step_line:first-child:after {
+  transform: translate(-55px, -1px);
+}
+/* .step_line.active {
+  border-color: #73b5e8;
+  color: #73b5e8;
+}
+.step_line.active:before {
+  background: linear-gradient(to right, #58bb58 0%, #73b5e8 100%);
+}
+.step_line.active:after {
+  color: #73b5e8;
+} */
+.step_line.done {
+  background-color: #58bb58;
+  border-color: #58bb58;
+  color: #fff;
+}
+.step_line.done:before {
+  background-color: #58bb58;
+}
+/* .wizard .wizard-header .steps .wizard-step {
+	background: #038dab;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: 0 10px;
+	opacity: 0.2;
+	border-radius: 50%;
+	transition: all 0.8s;
+}
+.wizard .wizard-header .steps .wizard-step.active {
+	opacity: 1;
+} */
+.wizard .wizard-body {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.68, -0.3, 0.37, 0.6);
+  height: 75vh;
+}
+.wizard .wizard-body .step {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: -100%;
+  opacity: 0;
+}
+.wizard .wizard-body .step.initial {
+  position: relative;
+}
+.wizard .wizard-body .step.off {
+  opacity: 0 !important;
+  right: 100% !important;
+}
+.wizard .wizard-body .step.active {
+  right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  opacity: 1;
+  transition: all 0.4s linear;
+  transition-delay: 0.1s;
+}
+.wizard .wizard-footer {
+  margin-top: 30px;
+}
+
+.sendColorBtn {
+  padding: 5px 28px;
+  background: #ff8d00;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.sendColorBtn:hover {
+  color: #fff;
+}
+
+.envourBtn {
+  padding: 6px 8px;
+  background: #03a9f4;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.enregBtn {
+  background: #f0e7e7;
+}
+.enregContBtn {
+  background: #ff8d00;
+}
+
+.reggBTN {
+  padding: 4px 12px !important;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.envoyer_gradient {
+  background: linear-gradient(to right, red 0%, orange 100%);
+  padding: 4px 55px;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+.dashboardBtnGradient {
+  padding: 6px 50px !important;
+  background: linear-gradient(to left, red 10%, #c78100 100%);
+  font-weight: 800;
+  border-radius: 20px;
+}
+
+.dashboardBtnTransparent {
+  padding: 6px 25px !important;
+  border: 1px solid orange !important;
+  color: orange;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.dashboardBtnTransparent i{
+  color: orange;
+}
